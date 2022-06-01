@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviasales Test Task</title>
+    <link rel="icon" href="./img/Logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main-page__wrapper">
+        <div class="main-page__block-logo">
+            <img src="./img/Logo.svg" alt="">
+        </div>
+        <div class="main-page__block-content">
+            <div class="main-page__number-transfers">
+                <div class="main-page__transfers-wrapper">
+                    <div class="main-page__transfers-title">Количество пересадок</div>
+                    <div class="main-page__type-stops">
+                        <div id="all" class="main-page__one-stop">
+                            <label class="main-page__stops-label all">
+                                <span class="main-page__label-text">Все</span>
+                                <input type="checkbox">
+                                <span class="main-page__checkbox-checkmark">
+                                    <span id="all" class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                        
+                       <div class="main-page__one-stop">
+                        <label class="main-page__stops-label">
+                            <span class="main-page__label-text">Без пересадок</span>
+                            <input type="checkbox">
+                            <span class="main-page__checkbox-checkmark">
+                                <span id="no-stops" class="check"></span>
+                            </span>
+                        </label>
+                    </div>
+    
+                        <div class="main-page__one-stop">
+                            <label class="main-page__stops-label">
+                                <span class="main-page__label-text">1 пересадка</span>
+                                <input type="checkbox">
+                                <span class="main-page__checkbox-checkmark">
+                                    <span id="one-stop" class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+    
+                        <div class="main-page__one-stop">
+                            <label class="main-page__stops-label">
+                                <span class="main-page__label-text">2 пересадки</span>
+                                <input type="checkbox">
+                                <span class="main-page__checkbox-checkmark">
+                                    <span id="two-stops" class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+    
+                        <div class="main-page__one-stop">
+                            <label class="main-page__stops-label">
+                                <span class="main-page__label-text">3 пересадки</span>
+                                <input type="checkbox">
+                                <span class="main-page__checkbox-checkmark">
+                                    <span id="three-stops" class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-page__block-tickets">
+                <div class="main-page__type-ticket">
+                    <div class="main-page__one-type cheap checked-type">
+                        Самый дешёвый
+                    </div>
+                    <div class="main-page__one-type quick">
+                        Самый быстрый
+                    </div>
+                </div>
+                <div class="main-page__block-variants-tickets">    
+                    <div class="main-page__tickets"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template id="tickets">
+        <div class="main-page__one-ticket">
+            <div class="main-page__wrapper-ticket">
+                <div class="main-page__ticket-top-block">
+                    <div class="main-page__ticket-price">
+                        <span class="main-page__price">13 400 P</span>
+                    </div>
+                    <div class="main-page__ticket-logo">
+                        <img src="./img/S7 Logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="main-page__ticket-bottom-block">
+                    <div class="main-page__ticket-description">
+                        <div>
+                            <div>
+                                <span class="thither__origin">MOW</span> – <span class="thither__destination">HKT</span>
+                            </div>
+                            <div>
+                                <span class="thither__time-departure">10:45</span> – <span class="thither__time-arrival">08:00</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>В пути</div>
+                            <div class="thither__time-way">21ч 15м</div>
+                        </div>
+                        <div>
+                            <div class="thither__title-stops">2 пересадки</div>
+                            <div class="thither__stops">HKG, JNB</div>
+                        </div>
+                    </div>
+
+                    <div class="main-page__ticket-description">
+                        <div>
+                            <div>
+                                <span class="back__origin">MOW</span> – <span class="back__destination">HKT</span>
+                            </div>
+                            <div>
+                                <span class="back__time-departure">11:20</span> – <span class="back__time-arrival">00:50</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>В пути</div>
+                            <div class="back__time-way">13ч 30м</div>
+                        </div>
+                        <div>
+                            <div class="back__title-stops">1 пересадка</div>
+                            <div class="back__stops">HKG</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

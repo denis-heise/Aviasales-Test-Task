@@ -1,0 +1,187 @@
+$widthTypeTicket: 502px;
+$heightTypeTicket: 50px;
+
+@mixin mainFont {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+body{
+    background: #E5E5E5;
+}
+.main-page__block-logo{
+    img{
+        margin-left: 430px;
+    }
+}
+.main-page__block-content{
+    display: flex;
+    margin-left: 100px;
+}
+.main-page__type-ticket{
+    display: flex;
+    width: $widthTypeTicket;
+    height: $heightTypeTicket;
+    border: 1px solid #DFE5EC;
+    margin-bottom: 23px;
+}
+.main-page__one-type{
+    @include mainFont;
+    position: relative;
+    width: ($widthTypeTicket / 2);
+    height: $heightTypeTicket;
+    color: #4A4A4A;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 53px;
+    
+    &:first-child{
+        border-radius: 5px 0 0 8px;
+    }
+    &:nth-child(2){
+        border-radius: 0  8px 8px 0;
+    }
+}
+.checked-type{
+    color: #fff;
+    background: #2196F3;
+}
+.main-page__number-transfers{
+    width: 232px;
+    height: 262px;
+    background-color: #fff;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.main-page__transfers-title{
+    @include mainFont;
+    margin: 25px 0 8px 20px;
+}
+.main-page__one-stop{
+    @include mainFont;
+    height: 40px;
+    font-weight: 400;
+    font-size: 13px;
+    vertical-align: middle;
+    cursor: pointer;
+    
+    label{
+        height: 40px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    &:hover{
+        background-color: #F1FCFF;
+    }
+}
+.main-page__stops-label {
+    position: relative;
+    input[type="checkbox"]{
+        display: none;
+    }
+    .main-page__label-text{
+        position: absolute;
+        top: 7px;
+        left: 40px;
+        width: 150px;
+    }
+    .main-page__checkbox-checkmark {
+        content: '';
+        position: relative;
+        bottom: 11px;
+        left: 21px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #2196F3;
+        border-radius: 2px;
+
+        .check{
+                content: '';
+                position: absolute;
+                left: 4px;
+                top: 6px;
+                width: 12px;
+                height: 8px;
+                background-image: url('../img/check-mark.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                opacity: 0;
+                transition:  0.2s ease-in;
+        }
+        .visible{
+            opacity: 1;
+        }
+    }
+}
+.main-page__block-tickets{
+    margin-left: 25px;
+}
+.main-page__one-ticket {
+    position: relative;
+    width: $widthTypeTicket;
+    height: 184px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.main-page__wrapper-ticket {
+    position: absolute;
+    width: $widthTypeTicket - 50px;
+    padding: 15px 20px 20px 25px;
+}
+.main-page__ticket-top-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+.main-page__ticket-price {
+    @include mainFont;
+    color: #2196F3;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+.main-page__ticket-description {
+    display: flex;
+    margin-right: 20px;
+
+    div{
+        @include mainFont;
+        width: 110px;
+        margin-right: 45px;
+
+        div{
+            &:first-child{
+                line-height: 18px;
+                color: #A0B0B9;
+            }
+            &:nth-child(2){
+                font-size: 14px;
+                line-height: 21px;
+                color: #4A4A4A;
+                letter-spacing: 0;
+            }
+        }
+    }
+    &:first-child{
+        margin-bottom:  20px;
+    }
+}
+.main-page__block-error{
+    display: none;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    .main-page__error-text{
+        @include mainFont;
+        margin-left: 7px;
+    }
+}

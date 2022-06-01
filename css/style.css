@@ -1,0 +1,229 @@
+body {
+  background: #E5E5E5;
+}
+
+.main-page__block-logo img {
+  margin-left: 430px;
+}
+
+.main-page__block-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+}
+
+.main-page__type-ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 502px;
+  height: 50px;
+  border: 1px solid #DFE5EC;
+  margin-bottom: 23px;
+}
+
+.main-page__one-type {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  width: 251px;
+  height: 50px;
+  color: #4A4A4A;
+  background: #fff;
+  cursor: pointer;
+  text-align: center;
+  line-height: 53px;
+}
+.main-page__one-type:first-child {
+  border-radius: 5px 0 0 8px;
+}
+.main-page__one-type:nth-child(2) {
+  border-radius: 0 8px 8px 0;
+}
+
+.checked-type {
+  color: #fff;
+  background: #2196F3;
+}
+
+.main-page__number-transfers {
+  width: 232px;
+  height: 262px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-page__transfers-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 25px 0 8px 20px;
+}
+
+.main-page__one-stop {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  height: 40px;
+  font-weight: 400;
+  font-size: 13px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.main-page__one-stop label {
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.main-page__one-stop:hover {
+  background-color: #F1FCFF;
+}
+
+.main-page__stops-label {
+  position: relative;
+}
+.main-page__stops-label input[type=checkbox] {
+  display: none;
+}
+.main-page__stops-label .main-page__label-text {
+  position: absolute;
+  top: 7px;
+  left: 40px;
+  width: 150px;
+}
+.main-page__stops-label .main-page__checkbox-checkmark {
+  content: "";
+  position: relative;
+  bottom: 11px;
+  left: 21px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2196F3;
+  border-radius: 2px;
+}
+.main-page__stops-label .main-page__checkbox-checkmark .check {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 12px;
+  height: 8px;
+  background-image: url("../img/check-mark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.main-page__stops-label .main-page__checkbox-checkmark .visible {
+  opacity: 1;
+}
+
+.main-page__block-tickets {
+  margin-left: 25px;
+}
+
+.main-page__one-ticket {
+  position: relative;
+  width: 502px;
+  height: 184px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.main-page__wrapper-ticket {
+  position: absolute;
+  width: 452px;
+  padding: 15px 20px 20px 25px;
+}
+
+.main-page__ticket-top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.main-page__ticket-price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #2196F3;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.main-page__ticket-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+.main-page__ticket-description div {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: 110px;
+  margin-right: 45px;
+}
+.main-page__ticket-description div div:first-child {
+  line-height: 18px;
+  color: #A0B0B9;
+}
+.main-page__ticket-description div div:nth-child(2) {
+  font-size: 14px;
+  line-height: 21px;
+  color: #4A4A4A;
+  letter-spacing: 0;
+}
+.main-page__ticket-description:first-child {
+  margin-bottom: 20px;
+}
+
+.main-page__block-error {
+  display: none;
+}
+.main-page__block-error img {
+  width: 20px;
+  height: 20px;
+}
+.main-page__block-error .main-page__error-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-left: 7px;
+}
