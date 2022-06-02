@@ -174,14 +174,3 @@ body{
         margin-bottom:  20px;
     }
 }
-.main-page__block-error{
-    display: none;
-    img{
-        width: 20px;
-        height: 20px;
-    }
-    .main-page__error-text{
-        @include mainFont;
-        margin-left: 7px;
-    }
-}
